@@ -1,0 +1,52 @@
+
+body { 
+    margin:0;
+    padding:0; 
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80% 50% 50% 50% 50% 50% 25%;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "name name name name"
+    "pricing pricing upcoming upcoming"
+    "pricing pricing upcoming upcoming"
+    "about about image image"
+    "about about image image"
+    "contact contact contact contact"
+    "social social social social";
+}
+
+.name {
+    background-color: darkorange;
+    grid-area: name;
+}
+
+.pricing {
+    background-color: red;
+    grid-area: pricing;
+}
+
+.upcoming {
+    background-color: chartreuse;
+    grid-area: upcoming;
+}
+
+.about {
+    background-color: gold;
+    grid-area: about;
+}
+
+.imgdiv {
+    background-color: darkgrey;
+    grid-area: image;
+}
+
+.contact {
+    background-color: blue;
+    grid-area: contact;
+}
+
+.social {
+    background-color: purple;
+    grid-area: social;
+}
